@@ -58,7 +58,7 @@
         flex-direction: column;
     }
     #contact .us{
-        height: 60vh;
+        min-height: 60vh;
     }
     #contact .us .addr{
         width: 100%;
@@ -66,7 +66,7 @@
         text-align: center;
     }
     #contact .contact{
-        height: 80vh;
+        min-height: 80vh;
     }
     #contact .contact h1,
     #contact .contact p{
@@ -112,5 +112,47 @@
     .nav a i,
     .nav a.active span{
         display: block;
+    }
+    #about .txt {
+        font-size: 30px;
+    }
+    #offer .offer {
+        width: 90%;
+    }
+}
+@media (max-width: 415px) {
+    #home h1 ,
+    #offer .offer h1 {
+        font-size: 35px;
+    }
+    #offer .offer p {
+        font-size: 20px;
+    }
+    #about .txt {
+        max-width: none;
+        width: 100%;
+        font-size: 27px;
+    }
+}
+@media (max-width: 350px) {
+    nav{
+        padding: 0 20px;
+    }
+    .nav a.active span{
+        display: none;
+    }
+    #home h1 ,
+    #offer .offer h1 {
+        font-size: 28px;
+    }
+    #home h2 ,
+    #offer .offer p {
+        font-size: 18px;
+    }
+    #about h1{
+        font-size: 40px;
+    }
+    #about h2{
+        font-size: 50px;
     }
 }
