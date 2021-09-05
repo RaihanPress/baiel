@@ -16,7 +16,7 @@
             },10)
         }
     })
-    $$('.nav a').forEach(a=>{
+    $$('a[href*="#"]').forEach(a=>{
         a.addEventListener('click',function(e){
             e.preventDefault()
             $$('.nav a').forEach(a=>a.classList.remove('active'))
