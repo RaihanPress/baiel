@@ -71,18 +71,18 @@
         <div class="contact">
             <h1>Wanna ASK Something?</h1>
             <p>Enter Your Query Down Below.</p>
-            <form method="POST" netlify>
+            <form method="POST" netlify name="query">
                 <label class="name">
                     <span>Your Name *</span>
-                    <input type="name" required>
+                    <input type="name" required name="name">
                 </label>
                 <label class="email">
                     <span>Your Email Address *</span>
-                    <input type="email" required>
+                    <input type="email" required name="email">
                 </label>
                 <label class="query">
                     <span>Your Query *</span>
-                    <textarea required></textarea>
+                    <textarea required name="message"></textarea>
                 </label>
                 <input type="hidden" name="subject" value="New Query Submitted on your site.">
                 <input type="submit" class="submit" value="Submit">
