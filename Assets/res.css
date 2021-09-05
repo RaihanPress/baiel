@@ -1,0 +1,116 @@
+@media (max-width: 965px) {
+    #about {
+        text-align: center;
+    }
+    #about .about{
+        flex-direction: column;
+    }
+    #about .about img{
+        margin: 0;
+        width: 80%;
+        margin-bottom: 15px;
+        max-height: 50vh;
+    }
+    #about .txt{
+        width: 90%;
+        text-align: center;
+    }
+}
+@media (max-width: 950px) {
+    #home h1 {
+        font-size: 70px;
+    }
+    #home h2 {
+        font-size: 30px;
+    }
+}
+@media (max-width: 850px) {
+    #offer .offer{
+        width: calc(100% - 100px);
+    }
+}
+@media (max-width: 760px) {
+    #home .images{
+        position: relative;
+        top: auto;
+        padding: 10px;
+        /* flex-wrap: wrap; */
+    }
+    #home .images .text,
+    #home .images .logo{
+        max-width: 90%;
+    }
+    #home .images img{
+        width: 100%;
+    }
+    #about{
+        background: linear-gradient(#0008,#0008), url('./matese-fields-pvHma684eEI-unsplash.jpg') center right / cover;
+    }
+    #about h1 ,
+    #about h2 ,
+    #about .about{
+        color: #f1f1f1;
+    }
+    #about .about{
+        padding-right: unset;
+    }
+    #contact{
+        flex-direction: column;
+    }
+    #contact .us{
+        height: 60vh;
+    }
+    #contact .us .addr{
+        width: 100%;
+        max-width: none;
+        text-align: center;
+    }
+    #contact .contact{
+        height: 80vh;
+    }
+    #contact .contact h1,
+    #contact .contact p{
+        text-align: center;
+    }
+}
+@media (max-width: 660px) {
+    #home h1 {
+        font-size: 10vw;
+    }
+    #home h2{
+        font-size: 6vw;
+    }
+    #about h1 {
+        font-size: 13vw;
+    }
+    #about h2 {
+        font-size: 60px;
+    }
+    #about .about{
+        margin-top: 15px;
+    }
+}
+@media (max-width: 500px) {
+    #home .images img{
+        height: 75px;
+        margin-bottom: 15px;
+    }
+    #home p {
+        font-size: 30px;
+    }
+    #home h1 {
+        font-size: 40px;
+    }
+    #offer .offer{
+        padding: 10px;
+    }
+}
+@media (max-width: 470px) {
+    .nav a span{
+        display: none;
+    }
+    .nav a i,
+    .nav a.active span{
+        display: block;
+    }
+}
