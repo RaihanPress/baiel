@@ -20,7 +20,7 @@
         a.addEventListener('click',function(e){
             e.preventDefault()
             $$('.nav a').forEach(a=>a.classList.remove('active'))
-            $('#'+e.target.href.split('#')[1]).classList.add('active')
+            $(`.nav a[href="${e.target.href}"]`).classList.add('active')
             window.scrollTo(0,$('#'+e.target.href.split('#')[1]).offsetTop-60)
         })
     })
