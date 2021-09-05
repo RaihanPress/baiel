@@ -1,6 +1,4 @@
 (() => {
-    $ = el => document.querySelector(el)
-    $$ = el => document.querySelectorAll(el)
     window.addEventListener('scroll', function () {
         $('nav').classList.toggle('sticky', window.scrollY > 50)
     })
@@ -24,4 +22,9 @@
             window.scrollTo(0,$('#'+e.target.href.split('#')[1]).offsetTop-60)
         })
     })
+    setTimeout(()=>{
+        $('script').remove()
+        $('style').remove()
+        $('.load').remove()
+    },1500)
 })()
