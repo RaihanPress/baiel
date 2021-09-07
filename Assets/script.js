@@ -23,7 +23,7 @@
         })
     })
     setTimeout(()=>{
-        $('body script').remove()
+    //$('body script').remove()
         $('style').remove()
         $('.load').remove()
     },1500)
