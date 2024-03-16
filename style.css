@@ -1,0 +1,165 @@
+@font-face {
+	font-family: 'poppins_font';
+	src: url('./Images/Poppins-Regular.ttf');
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins_font";
+}
+#navtop{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 15px;
+    background: #f00;
+}
+#navtop a{
+    color: #fff;
+    height: 35px;
+    padding: 5px;
+}
+#navtop #email{
+    display: flex;
+}
+#navtop #contact{
+    display: flex;
+    flex-wrap: wrap;
+}
+#navtop #email:hover,
+#navtop #contact .number:hover,
+#navtop #email:focus,
+#navtop #contact .number:focus{
+    background: #b90000;
+}
+#navsecondary{
+    background: #fff;
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    z-index: 99;
+}
+#navsecondary #title{
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #f00;
+}
+
+#home{
+    height: 450px;
+    position: relative;
+}
+#home #bg_slider{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+    display: flex;
+    /* display: none; */
+}
+#home #bg_slider img{
+    min-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top left;
+    animation: slidee 6s ease infinite;
+}
+@keyframes slide {
+    0%,25%{
+        transform: translateX(0%);
+    }
+    33%,66%{
+        transform: translateX(-100%);
+    }
+    69%,to{
+        transform: translateX(-200%);
+    }
+}
+#home #name_text,
+#home #addr {
+    padding: 10px 60px;
+}
+#home #name_text .line{
+    font-size: 3rem;
+    font-weight: bold;
+}
+#home #name_text .line::first-letter{
+    color: #f00;
+}
+#home #addr {
+    padding: 10px 60px;
+    font-size: 24px;
+}
+#home #addr .icon{
+    padding-right: 10px;
+}
+
+
+
+#ramazan_offer {
+  display: grid;
+  grid-template-areas: 
+    "offer_title percentage"
+    "timer_box price";
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-rows: 50px auto auto auto;
+  padding: 20px 130px;
+  overflow: hidden;
+}
+#ramazan_offer .item{
+    box-shadow: 0 0 0px #f00;
+}
+#ramazan_offer #offer_title {
+    grid-area: offer_title;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+#ramazan_offer #offer_title span{
+    color: #f00;
+}
+#ramazan_offer #timer_box {
+    grid-area: timer_box;
+}
+#ramazan_offer #timer_box #timer_txt{
+    font-size: 2rem;
+}
+
+#ramazan_offer #percentage {
+    grid-area: percentage;
+}
+#ramazan_offer #percentage #percent{
+    font-size: 6rem;
+    font-weight: bold;
+    text-align: center;
+    line-height: 5rem;
+    color: #f00;
+}
+#ramazan_offer #percentage #percent_txt{
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#ramazan_offer #price {
+    grid-area: price;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+#ramazan_offer #price #full_price{
+    font-size: 2rem;
+    text-decoration: line-through;
+}
+#ramazan_offer #price #new_price{
+    font-size: 3rem;
+    font-weight: bold;
+    color: #f00;
+}
+

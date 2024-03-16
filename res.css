@@ -1,0 +1,49 @@
+@media (max-width: 1190px) {
+	#ramazan_offer {
+		padding: 20px 70px;
+	}
+
+	#ramazan_offer #offer_title {
+		font-size: 1.7rem;
+	}
+
+	#ramazan_offer #percentage #percent {
+		font-size: 4.5rem;
+	}
+
+	#ramazan_offer #percentage #percent_txt {
+		font-size: 2rem;
+	}
+}
+
+@media(max-width: 950px) {
+	#ramazan_offer {
+		display: grid;
+		grid-template-areas: "offer_title""percentage""price""timer_box";
+		grid-template-columns: 1fr;
+		grid-template-rows: auto;
+	}
+	#ramazan_offer #timer_box{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		align-items: center;
+	}
+	#ramazan_offer #offer_title{
+		text-align: center;
+	}
+}
+
+@media(max-width: 900px) {
+
+	#home #name_text,
+	#home #addr {
+		padding: 10px 30px;
+	}
+}
+
+@media(max-width: 560px) {
+	#ramazan_offer{
+		padding: 20px 30px;
+	}
+}
