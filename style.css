@@ -1,14 +1,16 @@
 @font-face {
-	font-family: 'poppins_font';
-	src: url('./Images/Poppins-Regular.ttf');
+    font-family: 'poppins_font';
+    src: url('./Images/Poppins-Regular.ttf');
 }
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "poppins_font";
 }
-#navtop{
+
+#navtop {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -16,25 +18,30 @@
     padding: 15px;
     background: #f00;
 }
-#navtop a{
+
+#navtop a {
     color: #fff;
     height: 35px;
     padding: 5px;
 }
-#navtop #email{
+
+#navtop #email {
     display: flex;
 }
-#navtop #contact{
+
+#navtop #contact {
     display: flex;
     flex-wrap: wrap;
 }
+
 #navtop #email:hover,
 #navtop #contact .number:hover,
 #navtop #email:focus,
-#navtop #contact .number:focus{
+#navtop #contact .number:focus {
     background: #b90000;
 }
-#navsecondary{
+
+#navsecondary {
     background: #fff;
     position: sticky;
     top: 0;
@@ -43,17 +50,24 @@
     padding: 15px;
     z-index: 99;
 }
-#navsecondary #title{
+
+#navsecondary #title {
     font-weight: bold;
     font-size: 1.2rem;
     color: #f00;
 }
 
-#home{
+body{
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+#home {
     height: 450px;
     position: relative;
 }
-#home #bg_slider{
+
+#home #bg_slider {
     position: absolute;
     top: 0;
     width: 100%;
@@ -63,88 +77,110 @@
     display: flex;
     /* display: none; */
 }
-#home #bg_slider img{
+
+#home #bg_slider .img {
     min-width: 100%;
     height: 100%;
-    object-fit: cover;
-    object-position: top left;
-    animation: slidee 6s ease infinite;
+    background-image: var(--src);
+    background-size: cover;
+    background-position: 0 0;
+    animation: slide 12s ease infinite;
 }
+
 @keyframes slide {
-    0%,25%{
+    0%, 32% {
         transform: translateX(0%);
     }
-    33%,66%{
+
+    34%, 65% {
         transform: translateX(-100%);
     }
-    69%,to{
+
+    67%, 99% {
         transform: translateX(-200%);
     }
+    to{
+        transform: translateX(-300%);
+    }
 }
+
 #home #name_text,
 #home #addr {
     padding: 10px 60px;
 }
-#home #name_text .line{
+
+#home #name_text .line {
     font-size: 3rem;
     font-weight: bold;
 }
-#home #name_text .line::first-letter{
+
+#home #name_text .line::first-letter {
     color: #f00;
 }
+
 #home #addr {
     padding: 10px 60px;
     font-size: 24px;
 }
-#home #addr .icon{
+
+#home #addr .icon {
     padding-right: 10px;
 }
 
 
 
 #ramazan_offer {
-  display: grid;
-  grid-template-areas: 
-    "offer_title percentage"
-    "timer_box price";
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  grid-template-rows: 50px auto auto auto;
-  padding: 20px 130px;
-  overflow: hidden;
+    background: #fffdc7;
+    display: grid;
+    grid-template-areas:
+        "offer_title percentage"
+        "timer_box price";
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-rows: 60px auto auto auto;
+    padding: 20px 130px;
+    overflow: hidden;
 }
-#ramazan_offer .item{
+
+#ramazan_offer .item {
     box-shadow: 0 0 0px #f00;
 }
+
 #ramazan_offer #offer_title {
     grid-area: offer_title;
     font-size: 2rem;
     font-weight: bolder;
 }
-#ramazan_offer #offer_title span{
+
+#ramazan_offer #offer_title span {
     color: #f00;
 }
+
 #ramazan_offer #timer_box {
     grid-area: timer_box;
 }
-#ramazan_offer #timer_box #timer_txt{
+
+#ramazan_offer #timer_box #timer_txt {
     font-size: 2rem;
 }
 
 #ramazan_offer #percentage {
     grid-area: percentage;
 }
-#ramazan_offer #percentage #percent{
+
+#ramazan_offer #percentage #percent {
     font-size: 6rem;
     font-weight: bold;
     text-align: center;
     line-height: 5rem;
     color: #f00;
 }
-#ramazan_offer #percentage #percent_txt{
-    font-size: 2.5rem;
+
+#ramazan_offer #percentage #percent_txt {
+    font-size: 2rem;
     font-weight: bold;
     text-align: center;
     text-transform: uppercase;
+    letter-spacing: 5px;
 }
 
 #ramazan_offer #price {
@@ -153,13 +189,177 @@
     justify-content: center;
     align-items: flex-end;
 }
-#ramazan_offer #price #full_price{
+
+#ramazan_offer #price #full_price {
     font-size: 2rem;
     text-decoration: line-through;
 }
-#ramazan_offer #price #new_price{
+
+#ramazan_offer #price #new_price {
     font-size: 3rem;
     font-weight: bold;
     color: #f00;
 }
 
+
+#message {
+    display: flex;
+}
+
+#message #message_txt {
+    padding: 10px 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#message #message_txt h1 {
+    font-size: 3rem;
+    color: #136100;
+}
+
+#message #message_txt h2 {
+    font-size: 2rem;
+    background: #136100;
+    color: #fff;
+    align-self: start;
+    padding: 0 10px;
+    margin-bottom: 15px;
+}
+
+#message #message_txt p{
+    font-size: 1.2rem;
+}
+#message #message_txt p span {
+    font-weight: bold;
+    color: #f00;
+}
+
+#message #message_imgbox {
+    flex-shrink: 0;
+    width: 45%;
+    margin-left: 20px;
+}
+
+#message #message_imgbox img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: bottom left;
+}
+
+#features #cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: #f2f8ff;
+}
+#features #cards .card{
+    width: 250px;
+    padding: 15px 10px;
+    margin: 10px 20px;
+    text-align: center;
+    background: #fff;
+    border: 1.5px solid #81a4af;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 5px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+#features #cards .card i.icon{
+    font-size: 2rem;
+    color: #0056c1;
+    margin-bottom: 15px;
+}
+#features #lists{
+    display: flex;
+    flex-wrap: wrap;
+}
+#features #lists .list{
+    margin: 0 auto;
+    padding: 20px 45px;
+}
+#features #lists .list ul li{
+    list-style: none;
+    display: flex;
+}
+#features #lists .list ul li::before{
+    font-weight: 900;
+    font-family: "Font Awesome 5 Free";
+    content: "\f058";
+    margin-right: 15px;
+    color: #50a808;
+    line-height: 1.5;
+}
+
+#contact{
+    display: flex;
+}
+#contact #address{
+    width: 60%;
+    flex-shrink: 0;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+#contact #address .addr_title{
+    font-size: 1.5rem; 
+    font-weight: bold;
+}
+#contact #address .addr_line .icon{
+    padding: 5px;
+    margin: 5px;
+    background: #000;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 10px;
+}
+#contact #address iframe{
+    height: 100%;
+    min-height: 250px;
+}
+#contact #form_area{
+    width: 40%;
+    padding: 30px;
+    background: #eefff9;
+}
+#contact #form_area form{
+    padding: 15px 0;
+    display: flex;
+    flex-direction: column;
+}
+#contact #form_area form input,
+#contact #form_area form textarea{
+    width: 100%;
+    padding: 8px 5px;
+    margin-bottom: 5px;
+    border: 2px solid #abf4ff;
+    outline: transparent;
+    border-radius: 4px;
+}
+#contact #form_area form input:focus,
+#contact #form_area form textarea:focus,
+#contact #form_area form input:active,
+#contact #form_area form textarea:active{
+    border: 2px solid #7099a0;
+}
+#contact #form_area form textarea{
+    resize: none;
+    height: 200px;
+}
+
+#footer{
+    background: #222;
+    display: flex;
+}
+#footer a{
+    width: 100%;
+    color: #eee;
+    padding: 20px;
+    text-decoration: none;
+    text-align: center;
+}
+#footer a span{
+    text-decoration: underline;
+}

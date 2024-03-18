@@ -35,15 +35,67 @@
 }
 
 @media(max-width: 900px) {
-
 	#home #name_text,
 	#home #addr {
 		padding: 10px 30px;
 	}
+	#home #name_text .line,
+	#home #addr{
+		color: #fff;
+	}
+	#home #bg_slider{
+		background: #000;
+	}
+	#home #bg_slider .img{
+		opacity: .3;
+		background-image: var(--src-m);
+		background-position: center;
+	}
+}
+@media(max-width: 850px) {
+	
+	#message {
+		flex-direction: column;
+		align-items: center;
+		padding-top: 20px;
+	}
+	
+	#message #message_imgbox {
+		width: 425px;
+		max-width: 100%;
+		margin: 0;
+	}
+	#features #lists{
+		display: block;
+	}
+}
+@media(max-width: 750px) {
+	#contact{
+		display: block;
+	}
+	#contact #address,
+	#contact #form_area{
+		width: 100%;
+	}
 }
 
 @media(max-width: 560px) {
+	#home #name_text{
+		padding-top: 80px;
+	}
+	#home #name_text .line {
+		font-size: 2rem;
+	}
 	#ramazan_offer{
 		padding: 20px 30px;
+	}
+	#ramazan_offer #percentage #percent_txt{
+		letter-spacing: 0;
+	}
+	#message #message_txt h1{
+		font-size: 2rem;
+	}
+	#message #message_txt h2{
+		font-size: 1.5rem;
 	}
 }
