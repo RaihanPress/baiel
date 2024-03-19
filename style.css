@@ -307,6 +307,14 @@ body{
     font-size: 1.5rem; 
     font-weight: bold;
 }
+#contact #address .addr_line{
+    text-decoration: none;
+    color: #000;
+    margin-bottom: 5px;
+}
+#contact #address .addr_line:hover{
+    background: #eee;
+}
 #contact #address .addr_line .icon{
     padding: 5px;
     margin: 5px;
